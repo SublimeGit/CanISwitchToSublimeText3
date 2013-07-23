@@ -1,6 +1,10 @@
 # coding: utf-8
 import json
-import urllib2
+try:
+    from urllib2 import urlopen, Request, HTTPError, URLError
+except ImportError:
+    from urllib.request import urlopen, Request
+    from urllib.error import HTTPError, URLError
 import threading
 import webbrowser
 from functools import partial
@@ -29,15 +33,15 @@ class CanSwitchCommand(ApplicationCommand):
         return packages
 
     def perform_check(self, packages):
-        data = json.dumps({'installed_packages2': packages})
-        req = urllib2.Request(self.URL, data, {'Content-Type': 'application/json'})
+        data = json.dumps({'installed_packages': packages}).encode('utf-8')
+        req = Request(self.URL, data, {'Content-Type': 'application/json'})
 
         try:
-            res = urllib2.urlopen(req)
-        except urllib2.HTTPError as e:
+            res = urlopen(req)
+        except HTTPError as e:
             sublime.error_message('Could not perform check. Server returned %s' % e.code)
             return
-        except urllib2.URLError as e:
+        except URLError as e:
             sublime.error_message('Could not connect to http://www.caniswitchtosublimetext3.com')
             return
 
