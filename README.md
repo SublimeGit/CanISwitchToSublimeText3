@@ -1,5 +1,5 @@
-CanISwitchToSublimeText3
-========================
+Can I Switch To Sublime Text 3?
+===============================
 
 Can you switch to Sublime Text 3? Install this package and get a quick answer using [caniswitchtosublimetext3.com](http://www.caniswitchtosublimetext3.com). Works on Sublime Text 2 and 3.
 
