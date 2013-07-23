@@ -5,9 +5,9 @@ Can you switch to Sublime Text 3? Install this package and get a quick answer us
 
 Installing
 ----------
-**With the Package Control plugin:** The easiest way to install SublimeLinter is through [Package Control](http://wbond.net/sublime_packages/package_control).
+**With the Package Control plugin:** The easiest way to install is through [Package Control](http://wbond.net/sublime_packages/package_control).
 
-**Without Git:** Download the latest source from [GitHub](https://github.com/SublimeLinter/SublimeLinter) and copy the CanISwitchToSublimeText3 folder to your Sublime Text "Packages" directory.
+**Without Git:** Download the latest source from [GitHub](https://github.com/SublimeGit/CanISwitchToSublimeText3) and copy the CanISwitchToSublimeText3 folder to your Sublime Text "Packages" directory.
 
 **With Git:** Clone the repository in your Sublime Text "Packages" directory:
 
