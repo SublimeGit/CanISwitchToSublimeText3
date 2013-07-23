@@ -19,6 +19,11 @@ The "Packages" directory is located at:
 * Linux: `~/.config/sublime-text-2/Packages/`
 * Windows: `%APPDATA%/Sublime Text 2/Packages/`
 
+Running
+-------
+To run the check, open the command palette (`shift+cmd+p` on OS X, `shift+ctrl+p` on Windows and Linux) and run the command `Can I Switch To Sublime Text 3?`. It's as simple as that.
+
+
 Incorrect Results
 -----------------
 If you spot any missing or incorrect results on [caniswitchtosublimetext3.com](http://www.caniswitchtosublimetext3.com), feel free to create an issue in this repository.
